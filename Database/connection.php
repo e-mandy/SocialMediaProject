@@ -1,15 +1,14 @@
 <?php
 
 class Database{
-    private $dbname;
+    private $dbname = "socialmedia";
     private $dbhost;
     private $dbpassword;
     private $dbuser;
     private $connect;
 
-    public function __construct($dbhost, $dbname, $dbuser, $dbpassword){
+    public function __construct($dbhost, $dbuser, $dbpassword){
         $this->dbhost = $dbhost;
-        $this->dbname = $dbname;
         $this->dbuser = $dbuser;
         $this->dbpassword = $dbpassword;
     }
