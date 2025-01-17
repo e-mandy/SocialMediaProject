@@ -17,11 +17,11 @@ class Database{
         $this->connect = null;
 
         try{
-            $connect = new PDO("mysql:host={$this->dbhost};dbname={$this->dbname}",
+            $this->connect = new PDO("mysql:host={$this->dbhost};dbname={$this->dbname}",
             $this->dbuser,
             $this->dbpassword
             );
-            $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             echo "La connexion a réussi :)";
 
