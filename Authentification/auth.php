@@ -3,6 +3,7 @@ class auth{
     private $connect;
 
     // Constructeur pour établir la connexion à la base de données
+    public function __construct($connect) {
         $this->connect = $connect;
     }
 
