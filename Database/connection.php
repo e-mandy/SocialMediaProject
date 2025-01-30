@@ -23,8 +23,6 @@ class Database{
             );
             $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            echo "La connexion a réussi :)";
-
         }catch(PDOException $exception){
             echo "La connexion a echoué : ". $exception->getMessage();
         }

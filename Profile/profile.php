@@ -31,7 +31,7 @@
 
                 $values = $exec->fetchAll();
             }catch(PDOException $exception){
-                echo "La récupération des informations de l'utilisateur n'a pas fonctionné : ". $exception;
+                echo "La récupération des informations de l'utilisateur n'a pas fonctionné : ".$exception;
             }
             
             return $values;
@@ -77,13 +77,13 @@
                 $this->biography,
                 $this->picture],
                 $id);
-
+                
                 echo "Modification réalisée avec succès";
 
             }catch(PDOException $exception){
                 echo "La modification des informations de l'utilisateur n'a pas fonctionné : ". $exception->getMessage();
             }
-
+            
             $this->pdo = null;
         }
     }
