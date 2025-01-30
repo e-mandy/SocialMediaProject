@@ -1,5 +1,5 @@
 <?php
- require_once '../Database/connection.php';
+require_once '../Database/connection.php';
 class Discussion{
     private $pdo;
 
@@ -14,7 +14,6 @@ class Discussion{
             echo "Erreur : ". $exception;
         }
         
-
     }
 
     public static function getAll($current_id){
