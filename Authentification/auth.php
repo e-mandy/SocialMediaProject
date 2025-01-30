@@ -65,19 +65,13 @@ class auth{
 
         // Préparer et exécuter la requête d'insertion
         $req = $this->connect->prepare("INSERT INTO user (pseudo, email, password,birthday,Biography,picture) VALUES (?, ?, ?,?, ?, ?)");
-        $result=$req->execute(array($username, $data['email'], $hashedPassword, $data['birthday'], $data['Biography'], $data['picture']));
+        $result =$req->execute(array($username, $data['email'], $hashedPassword, $data['birthday'], $data['Biography'], $data['picture']));
 
-        if ($result) {
-            return true;
-        } else {
-            return false;
-        }
+        return $result;
     }
 
     //Fonction pour la connexion de l'utilisateur
-    /*public function login($data){
-
-  }*/
+    
 }
 
 
@@ -123,7 +117,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
-
-
- 
