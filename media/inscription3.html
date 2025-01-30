@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA interactif</title>
+    <style>
+       body{
+     display: grid;
+     text-align: center;
+    }
+    h1{
+        color:  #052659;
+        
+    }
+    h2{
+        position: relative;
+        left: auto;
+    }
+    img{
+        border-radius: 10px;
+        width: 330px;
+        height: 293px;
+    }
+    .soumission{
+        background-color: #244667;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 16px;
+        width: 210px;
+        position: relative;
+        left: 700px;
+        top: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <h1> Cliquez sur l'image avec un tigre</h1>
+    <div class="image-container">
+        <img src="chien.webp" alt="Chat" data-correct="false">
+        <img src="CHIEN1.webp" alt="Chien" data-correct="false">
+        <img src="tigre.jpeg" alt="Oiseau" data-correct="true">
+        <img src="LAPIN.webp" alt="Poisson" data-correct="false">
+        <img src="perroquet.jpeg" alt="Poisson" data-correct="false">
+        <img src="LAPIN2.jpeg" alt="Poisson" data-correct="false">
+        <img srC="CHAT1.jpeg" alt="Poisson" data-correct="false">
+        <img src="CHIEN2.jpeg" alt="Poisson" data-correct="false">
+    </div>
+    <div class="soumission">
+        <a href="reus.html" >Soumettre</a> 
+        
+    </div>
+    <h2 id="result"></h2>
+  
+   
+
+    <script>
+        let images = document.querySelectorAll('.image-container img');
+        let result = document.getElementById('result');
+       
+
+        let userClickedCorrectly = false;
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.dataset.correct === 'true') {
+                    userClickedCorrectly = true;
+                    result.textContent = "Félicitation, vous avez bien sélectionné l'image d'un tigre";
+                    result.style.color = 'green';
+                } else {
+                    userClickedCorrectly = false;
+                    result.textContent = 'Echec, vous avez du mal choisi.Veuillez recommencer';
+                    result.style.color = 'red';
+                }
+            });
+        });
+
+      
+    </script>
+</body>
+</html>
+

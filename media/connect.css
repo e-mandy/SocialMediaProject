@@ -1,0 +1,148 @@
+
+    
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-color: #D8E8F2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+    
+  }
+  h1{
+    text-align: center;
+    position: relative;
+    top: 16px;
+    color: #052659;
+    font-weight: bold;
+    font-size: 40px;
+    gap: 20px;
+  }
+  .google {
+    background-color: #B8CCDD;
+    border: 3px solid  #B8CCDD;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin:  auto;
+    position: relative;
+    top: -27px;
+  }
+  .googlesvg{
+    margin-right: 12px;
+     position: relative;
+    top: 3px;
+    transform: scale(1.3);
+ }
+ .ou {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    top: -47px;
+  }
+  
+  .ou::before,
+  .ou::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    width: 20px;
+    background-color:  #B8CCDD;
+  }
+  
+  .ou span {
+    margin: 0 16px;
+    font-size: 22px;
+    color: #021024;
+  }
+  
+    
+    
+  .formulaire input{
+     background-color: #B8CCDD;
+    border: 3px solid  #B8CCDD;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin:  auto;
+    position: relative;
+    outline: none;
+    transition: all 0.3s ease; 
+    }
+   .formulaire input:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    
+    
+  }
+ 
+  .formulaire label{
+    display: flex;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .formulaire{
+    position: relative;
+    top: -90px;
+    margin-bottom: 43px;
+  }
+   .form {
+    border: 3px solid  #B8CCDD;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin:  auto;
+    position: relative;
+    text-align: center;
+    background-color: #244667;
+   color:white;
+   margin-bottom: 14px;
+   top: 26px;
+   
+   
+  }
+  
+  .oublie{
+    position: relative;
+    top: -71px;
+    left: 383px;
+    font-size: 13px;
+    font-style: italic;
+  }
+
+   a{
+    text-decoration: none;
+    color: #1d9bf0;
+  }
+  .sinscrire{
+    position: relative;
+    top:31px;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+  }
+  

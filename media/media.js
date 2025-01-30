@@ -1,0 +1,1 @@
+; // Défilement toutes les 5 secondes

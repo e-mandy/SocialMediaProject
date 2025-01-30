@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        
+        body{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color:  #D8E8F2;
+    position: relative;
+    top: 200px;
+    }
+    h1{
+        color:  #052659;
+    }
+    .formulaire input{
+    
+    background-color: #B8CCDD;
+    border: 3px solid  #B8CCDD;
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin:  auto;
+    position: relative; 
+    outline: none;
+    transition: all 0.3s ease;
+   transform: scale(1.01);
+   margin-bottom: 30px;
+     
+  }
+   .formulaire input:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+ 
+  }
+  .formulaire label{
+    display: flex;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .formulaire1{
+    position: relative;
+    left: 180px;
+    background-color: #052659; ;
+    border-radius: 20px;
+    text-align: center;
+    margin: 11px;
+    padding: 11px;
+    width: 90px;
+   
+  }
+ .formulaire1 a{
+    text-decoration: none;
+    color:#B8CCDD;
+}
+    </style>
+
+</head>
+<body>
+   <h1>Créer votre compte </h1> 
+   <form action="" method="post">
+    <div class="formulaire">
+        <label for="pseudo">E-mail ou Telephone</label>
+        <input type="text" id="nom" placeholder="Saisir  telephone ou email">
+      </div>
+      <div class="formulaire">
+        <label for="password">Mot de passe</label>
+        <div class="password">
+          <input type="password" id="password" placeholder="Entrer le mot de passe">
+        </div>
+        <div class="password">
+            <input type="password" id="password" placeholder="Confirmer le mot de passe">
+          </div>
+        <div class="formulaire1"><a href="inscription2.html">Suivant</a></div>
+       
+    
+   </form>
+</body>
+</html>
