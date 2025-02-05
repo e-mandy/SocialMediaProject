@@ -5,7 +5,7 @@ class Message{
     private $text = null;
     private $image = null;
     private $idSender;
-
+    
 
     public function __construct($idSender, $idDiscussion, $text = null, $image = null){
         $this->text = $text;
@@ -57,7 +57,7 @@ class Message{
         $query = "DELETE FROM Message WHERE id = ?";
         $exec = $connect->prepare($query);
         $exec->execute([$idMessage]);
-        
+
         }catch(PDOException $exception){
             echo "Erreur : ". $exception;
         }
